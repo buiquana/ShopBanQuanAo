@@ -1,0 +1,53 @@
+[
+  {
+    "id": "b9ccc556-a8e7-41b0-b94b-a777c0844d61",
+    "name": "Áo Polo",
+    "price": "200.000",
+    "image": "https://salt.tikicdn.com/cache/w1200/ts/product/af/21/31/06d0a6a10b56e1bc3fe1d25b1b039248.jpg",
+    "size": {
+      "size": {
+        "size": "L"
+      }
+    },
+    "color": {
+      "na": {
+        "na": "Đen"
+      }
+    },
+    "quantity": 1
+  },
+  {
+    "id": "2b280ea3-ec39-482d-9d61-4903e6889ecc",
+    "name": "VÁY DẠ SƠ MI ",
+    "price": "279.000",
+    "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpkwznfgcur34e",
+    "size": {
+      "size": {
+        "size": "L"
+      }
+    },
+    "color": {
+      "na": {
+        "na": "Dạ Hồng"
+      }
+    },
+    "quantity": 1
+  },
+  {
+    "id": "cb95d946-1596-46fd-ba73-3728d6d7c0f5",
+    "name": "Áo Polo",
+    "price": "200.000",
+    "image": "https://salt.tikicdn.com/cache/w1200/ts/product/af/21/31/06d0a6a10b56e1bc3fe1d25b1b039248.jpg",
+    "size": {
+      "size": {
+        "size": "L"
+      }
+    },
+    "color": {
+      "na": {
+        "na": "Đen"
+      }
+    },
+    "quantity": 1
+  }
+]

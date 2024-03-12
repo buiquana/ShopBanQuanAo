@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState,useEffect } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import Navigator  from './Navigation/navigator';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function App() {
+
+const App = () => {
+  const [isLoggedIn,setLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const checkLoginStatus = async () => {
+        const currentAccount = await AsyncStorage.getItem('currentAccount');
+        setLoggedIn(!!currentAccount);
+    };
+    checkLoginStatus();
+  },[]);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      {isLoggedIn ? <Navigator.MainTabs/> : <Navigator.AuthStack />}
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
